@@ -34,16 +34,15 @@
 </template>
 
 <script lang="ts">
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { RouterLink } from 'vue-router'
 import { routes } from '@/router/index'
-import { defineComponent } from 'vue'
-console.log(routes)
-export default defineComponent({
-  components: {},
+
+export default {
   data() {
-    return { routes }
+    return { routes: routes as any }
   }
-})
+}
 </script>
 <style>
 /* Add your CSS styles for the Navbar here */
