@@ -43,7 +43,7 @@
           <div class="ml-4">
             <span class="capitalize text-gray-800 dark:text-white">{{ item.Name }} </span>
 
-            <span :class="'block text-base dark:text-slate-400 ' + positionType(item.PosittionId)">
+            <span :class="'block text-base ' + positionType(item.PosittionId)">
               {{ translate(item, 'PosittionName') }}
             </span>
           </div>
@@ -108,7 +108,7 @@ export default {
         case 5047:
           return 'text-red-400 dark:text-red-400'
         case 5048:
-          return 'text-blue-400 dark:text-blue-300 '
+          return 'text-blue-400 dark:text-blue-300'
         case 5050:
           return 'text-green-400 dark:text-green-300'
         case 5052:
@@ -118,7 +118,7 @@ export default {
         case 5087:
           return 'text-yellow-500 dark:text-yellow-400 '
         default:
-          return 'text-zinc-500 dark:text-zinc-300'
+          return 'text-violet-500 dark:text-violet-400'
       }
     },
     modifyUrl(url: string | null) {
