@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Rowdies&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

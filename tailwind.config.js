@@ -5,7 +5,8 @@ export const content = ['./index.html', './src/**/*.{vue,js,ts}']
 export const theme = {
   extend: {
     fontFamily: {
-      sans: ['Open Sans', ...defaultTheme.fontFamily.sans]
+      sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+      rowdies: ['Rowdies']
     },
     colors: {
       'brand-gray-1': '#dadce0',
@@ -14,4 +15,5 @@ export const theme = {
     }
   }
 }
+export const darkMode = 'class'
 export const plugins = []

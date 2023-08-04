@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 bg-yellow-300">
+  <header class="fixed top-0 left-0 right-0 bg-yellow-300 z-30">
     <div class="flex justify-between items-center w-[92%] mx-auto">
       <div class="flex items-center h-16">
         <img class="w-16 h-10 cursor-pointer" src="@/assets/ivb_logo_color.svg" alt="..." />
@@ -15,8 +15,6 @@
             class="text-sky-800 hover:text-sky-600"
             >{{ item.name }}</RouterLink
           >
-          <!-- <RouterLink to="/input" class="text-black hover:text-sky-600">Search</RouterLink>
-          <RouterLink to="/todoList" class="text-black hover:text-sky-600">List</RouterLink> -->
         </div>
       </div>
       <div class="flex items-center gap-6">
@@ -45,8 +43,6 @@ export default {
 }
 </script>
 <style>
-/* Add your CSS styles for the Navbar here */
-/* For example, you can style the navbar with flexbox and set the background color, text color, etc. */
 .navbar {
   background-color: #333;
   color: #fff;
@@ -54,25 +50,22 @@ export default {
   justify-content: space-between;
   padding: 1rem;
 }
-
 .logo {
   font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
 }
-
 .nav-links {
   display: flex;
   list-style: none;
   padding: 0;
 }
-
 .nav-links li {
   margin-left: 1rem;
 }
-
 .nav-links li a {
   color: #fff;
   text-decoration: none;
 }
 </style>
+@/router/lang
