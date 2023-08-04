@@ -12,7 +12,7 @@
       />
     </svg>
     <select
-      class="border rounded-full shadow-lg p-2 mb-5 text-gray-600 h-10 pl-5 pr-10 bg-white dark:text-gray-400 dark:bg-slate-800 w-100 hover:border-gray-400 dark:border-slate-800 focus:outline-none appearance-none"
+      class="border rounded-full shadow-lg mb-5 font-bold text-gray-600 h-10 pl-5 pr-10 bg-white w-96 dark:text-gray-400 dark:bg-slate-800 hover:border-gray-400 dark:border-slate-800 focus:outline-none appearance-none"
       @change="updateSelectedValue"
       v-model="localSelectedValue"
     >

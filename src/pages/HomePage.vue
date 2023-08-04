@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <SearchBar :onClickSearch="onSearch" />
-    <div class="flex items-center justify-center pr-3">
+    <div class="flex items-center justify-center p-3">
       <MySelect
         :options="branchs"
         :name="$t('home_all_branchs')"

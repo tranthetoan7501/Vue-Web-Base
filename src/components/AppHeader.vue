@@ -8,7 +8,7 @@
         class="nav-links duration-500 md:static absolute bg-yellow-300 dark:bg-slate-800 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
       >
         <div
-          class="flex md:flex-row flex-col md:items-center gap-2 font-rowdies text-sky-700 text-2xl dark:text-yellow-300"
+          class="flex md:flex-row flex-col md:items-center gap-2 text-sky-700 text-2xl font-bold dark:text-yellow-300"
         >
           <!-- <font-awesome-icon :icon="['fas', 'id-badge']" /> -->
           {{ $t('home_home_page_name') }}

@@ -2,27 +2,27 @@
   <div>
     <div class="flex items-center px-5 pl-10 py-2">
       <span class="w-3/12">
-        <span class="text-xs uppercase text-gray-600 dark:text-gray-400 font-bold">{{
+        <span class="text-base uppercase text-gray-600 dark:text-gray-400 font-bold">{{
           $t('home_contact_info')
         }}</span>
       </span>
       <span class="w-4/12">
-        <span class="text-xs uppercase text-gray-600 dark:text-gray-400 font-bold">{{
+        <span class="text-base uppercase text-gray-600 dark:text-gray-400 font-bold">{{
           $t('home_workplace')
         }}</span>
       </span>
       <span class="w-2/12">
-        <span class="text-xs uppercase text-gray-600 dark:text-gray-400 font-bold">{{
+        <span class="text-base uppercase text-gray-600 dark:text-gray-400 font-bold">{{
           $t('home_phone')
         }}</span>
       </span>
       <span class="w-2/12">
-        <span class="text-xs uppercase text-gray-600 dark:text-gray-400 font-bold">{{
+        <span class="text-base uppercase text-gray-600 dark:text-gray-400 font-bold">{{
           $t('home_mobile')
         }}</span>
       </span>
       <span>
-        <span class="text-xs uppercase text-gray-600 dark:text-gray-400 font-bold">{{
+        <span class="text-base uppercase text-gray-600 dark:text-gray-400 font-bold">{{
           $t('home_email')
         }}</span>
       </span>
@@ -41,7 +41,7 @@
         <div class="flex items-center">
           <img :src="modifyUrl(item.Avatar)" class="h-10 rounded-full" />
           <div class="ml-4">
-            <span class="capitalize text-gray-800 dark:text-white">{{ item.Name }} </span>
+            <span class="capitalize text-gray-800 dark:text-white font-bold">{{ item.Name }} </span>
 
             <span :class="'block text-base ' + positionType(item.PosittionId)">
               {{ translate(item, 'PosittionName') }}
@@ -50,26 +50,28 @@
         </div>
       </div>
       <div class="w-4/12">
-        <span class="text-base block text-gray-600 dark:text-slate-400">{{
+        <span class="text-base block font-bold text-gray-600 dark:text-slate-400">{{
           translate(item, 'DepartmentName')
         }}</span>
-        <span class="text-base block text-gray-600 dark:text-slate-400">{{
+        <span class="text-base block font-bold text-gray-600 dark:text-slate-400">{{
           translate(item, 'UnitName')
         }}</span>
       </div>
       <div class="w-2/12">
-        <span class="capitalize text-gray-600 text-sm dark:text-slate-400">{{
+        <span class="capitalize text-gray-600 text-sm font-bold dark:text-slate-400">{{
           item.PhoneBranch
         }}</span>
-        <span class="capitalize block text-gray-600 text-sm dark:text-slate-400">
+        <span class="capitalize block text-gray-600 text-sm font-bold dark:text-slate-400">
           {{ item.Phone ? +item.Phone : '' }}</span
         >
       </div>
       <div class="w-1/12">
-        <span class="capitalize text-gray-600 text-sm dark:text-slate-400">{{ item.Mobile }}</span>
+        <span class="capitalize text-gray-600 text-sm font-bold dark:text-slate-400">{{
+          item.Mobile
+        }}</span>
       </div>
       <div>
-        <span class="text-gray-600 text-sm dark:text-slate-400">{{ item.Email }}</span>
+        <span class="text-gray-600 font-bold text-sm dark:text-slate-400">{{ item.Email }}</span>
       </div>
     </div>
   </div>
