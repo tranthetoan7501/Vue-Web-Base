@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="">
     <SearchBar :onClickSearch="onSearch" />
     <div class="flex items-center justify-center pr-3">
       <MySelect

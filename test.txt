@@ -1,0 +1,4 @@
+docker build --build-arg http_proxy=http://proxy2.indovinabank.com.vn:8080 
+               --build-arg https_proxy=http://proxy2.indovinabank.com.vn:8080 
+               --build-arg no_proxy=internal.example.com 
+               -t test .

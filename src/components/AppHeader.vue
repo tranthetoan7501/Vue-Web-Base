@@ -19,7 +19,7 @@
         <img :src="langFlag" class="h-10 rounded-full" @click="switchLang" />
         <button class="bg-transparent text-2xl" @click="switchDarkMode">
           <font-awesome-icon class="text-gray-100" v-if="isDark" :icon="['fas', 'moon']" />
-          <font-awesome-icon class="text-orange-700" v-else :icon="['fas', 'sun']" />
+          <font-awesome-icon class="text-sky-700" v-else :icon="['fas', 'sun']" />
         </button>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppHeader />
-    <div class="p-10 pt-20 bg-gray-100 dark:bg-blue-900">
+    <div class="p-abs bg-gray-100 h-100 dark:bg-blue-900">
       <RouterView />
     </div>
   </div>
@@ -14,5 +14,8 @@ import AppHeader from './components/AppHeader.vue'
 <style scoped>
 .active {
   color: green;
+}
+.p-abs {
+  padding: 60px 40px 462px 40px;
 }
 </style>
